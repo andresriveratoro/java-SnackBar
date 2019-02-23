@@ -17,6 +17,10 @@ public class Snack {
     this.vendingMachineId = vendingMachineId;
   }
 
+  public String getName() {
+    return name;
+  }
+
   public int getQuantity() {
     return quantity;
   }
@@ -31,6 +35,9 @@ public class Snack {
 
   public void setAddQuantity(int quantity) {
     this.quantity += quantity;
+    System.out.println("Added " + quantity + " " + name + " to the vending machine.");
+    System.out.println("There are " + quantity + " " + name +
+      " remaining in the vending machine.");
   }
 
   public void setSubtractQuantity(int quantity) {
