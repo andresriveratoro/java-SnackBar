@@ -12,4 +12,24 @@ public class Customer {
     this.name = name;
     this.cash = cash;
   }
+
+  public String getName() {
+    return name;
+  }
+
+  public double getCash() {
+    return cash;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public void setAddCash(double cash) {
+    this.cash += cash;
+  }
+
+  public void setSubtractCash(double cash) {
+    this.cash -= cash;
+  }
 }
