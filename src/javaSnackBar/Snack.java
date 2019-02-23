@@ -16,4 +16,24 @@ public class Snack {
     this.cost = cost;
     this.vendingMachineId = vendingMachineId;
   }
+
+  public int getQuantity() {
+    return quantity;
+  }
+
+  public double getTotalCost(int quantity) {
+    return cost * quantity;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public void setAddQuantity(int quantity) {
+    this.quantity += quantity;
+  }
+
+  public void setSubtractQuantity(int quantity) {
+    this.quantity -= quantity;
+  }
 }
